@@ -3,7 +3,7 @@
 A Multi Algorithm Visualizer application which can be used to analyse various Algorithms:
 
 1. Path Finding Algorithms:
-   a. BFS
+   a. ##BFS
    b. DFS
    c. Dijkstra
    d. Heuristic
