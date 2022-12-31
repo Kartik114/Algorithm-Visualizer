@@ -15,6 +15,7 @@ A Multi Algorithm Visualizer application which can be used to analyse various Al
    ### d. Insertion sort
    ### e. Quick sort
    
-## 3. BST visualizer for Insertion and Deletion.
-
+## 3. BST visualizer 
+   ### a. Insertion
+   ### b. Deletion
 ## Live Link :- https://kartik114.github.io/Algorithm-Visualizer/ 
