@@ -226,68 +226,7 @@ async function insertionSort() {
   isPaused = false;
   SortedAnimation();
 }
-
-// async function merge (start,end)  
-// {
-
-// if(start>=end)
-// return;
-
-// let mid = Math.floor((start+end)/2);
-// let n1 = mid - start + 1;
-// let n2 = end - mid;
-// let L = [], R = [];
-//       for (let i = 0; i < n1; i++) L.push(heights[start + i]);
-//       for (let j = 0; j < n2; j++) R.push(heights[mid + 1 + j]);
-//       let i = 0,
-//         j = 0,
-//         k = start;
-
-//       let barsIndices = [];
-//       let barsColors = [];
-//       for (let i1 = start; i1 <= end; i1++) {
-//         barsIndices.push(i1);
-//         barsColors.push('yellow');
-//       }
-
-//       while (i < n1 || j < n2) {
-//         if (isStopped) {
-//           draw([], []);
-//           return;
-//         }
-//         if (!isPaused) {
-//           if (j == n2 || (i < n1 && L[i] <= R[j])) {
-//             draw([k, ...barsIndices], ['green', ...barsColors]);
-//             i++;
-//           } else {
-//             for (let i1 = mid + 1 + j; i1 > k; i1--) {
-//               swap(i1, i1 - 1);
-//             }
-//             draw([k, ...barsIndices], ['green', ...barsColors]);
-//             j++;
-//           }
-//           k++;
-//         }
-//         await sleep(delay);
-//       }
-
-// };
-
-// function sorts(l ,r) 
-// {
-//   if (l>=r){
-//      return;
-//   }
-
-//   let mid = Math.floor((l+r)/2);
  
-//   sorts(l,mid);
-//   sorts(mid+1,r);
-//   merge(l,r);
-
-// };
-
-
 async function mergeSort()
 {
 
@@ -341,71 +280,7 @@ async function mergeSort()
   isPaused = false;
   SortedAnimation();
 
-}
-
-// async function calc(l,r)
-// {
-//    let c = 0;
-//    for(let i=l+1;i<=r;i++)
-//    {
-//     if(heights[i]<=heights[l])c++;
-//    }
-//    return c;
-// }
-
- 
-// async function fun(l,r)
-// {
-//   if(l>=r)return;
-  
-//   let c = calc(l,r);
-//   idx = l+c;
-//   let height1 = heights[l];
-//   let bars1 = bars[l];
-//   let barValues1 = barValues[l];
-  
-//   swap(l,idx);
-//   draw([l,idx],["yellow","green"]);
-//   fun(l,idx-1);
-//   fun(idx+1,r);
-//   // merge l to idx-1 , idx+1 to r
- 
-//   let i = l , j = idx+1;
-//   while(i<idx && j<=r)
-//   { 
-//        if(heights[i]<=height1 && heights[j]>height1)
-//        {
-//         i++;
-//         j++;
-//        }
-//        else if(heights[i]<=height1)
-//        {
-//            i++;
-//        }
-//        else if(heights[j]>height1)
-//        {
-//         j++;
-//        }
-//        else{
-//         swap(i,j);
-//         draw([i,j],['violet','green']);
-//         i++;
-//         j++;
-//        } 
-//   } 
-// }
-
-// async function quickSort()
-// {
-//     fun(0,n-1);
-//     console.log('Quick sort completed.');
-//     draw([], []);
-//     isSorted = true;
-//     isStopped = true;
-//     isPaused = false;
-//     SortedAnimation();
-// }
-
+} 
  async function quickSort(){
   let s = new Stack();
   s.push(0);
